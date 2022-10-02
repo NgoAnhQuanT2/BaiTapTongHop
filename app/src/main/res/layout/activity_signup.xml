@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="@drawable/bgl"
+>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/edittextuser"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:background="@drawable/vien"
+        android:backgroundTint="#4BC8D6D0"
+        android:gravity="center"
+        android:text="UserName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/edittextpassword"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:text="PassWord"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#4BC8D6D0"/>
+
+    <TextView
+        android:id="@+id/edittextpa"
+        android:layout_width="180dp"
+        android:layout_height="34dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:text="Confirm PassWord"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#4BC8D6D0"/>
+
+    <Button
+        android:id="@+id/buttondangnhap1"
+        android:layout_width="169dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="#6FADC575"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
