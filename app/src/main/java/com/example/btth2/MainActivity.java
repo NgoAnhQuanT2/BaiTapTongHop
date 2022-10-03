@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtadd;
     Button btnadd;
     int vitri=0;
+    boolean a=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                if(a)
                 startActivity(intent);
+                else a=true;
+
+
             }
         });
 
@@ -55,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String monhoc = edtadd.getText().toString();
-                arrayMusic.add(new Music(monhoc, R.drawable.soundcloud));
+                arrayMusic.add(new Music(monhoc, R.drawable.itunes));
                 adapter.notifyDataSetChanged();
             }
         });
@@ -88,11 +93,11 @@ public class MainActivity extends AppCompatActivity {
         lvMusic = (ListView) findViewById(R.id.listview);
         arrayMusic = new ArrayList<>();
 
-        arrayMusic.add(new Music("Our Song", R.drawable.soundcloud));
-        arrayMusic.add(new Music("Breathing", R.drawable.soundcloud));
-        arrayMusic.add(new Music("I Don’t Think That I Like Her", R.drawable.soundcloud));
-        arrayMusic.add(new Music("That Girl", R.drawable.soundcloud));
-        arrayMusic.add(new Music("Left And Right ", R.drawable.soundcloud));
-        arrayMusic.add(new Music("All Falls Down ", R.drawable.soundcloud));
+        arrayMusic.add(new Music("Our Song", R.drawable.itunes));
+        arrayMusic.add(new Music("Breathing", R.drawable.itunes));
+        arrayMusic.add(new Music("I Don’t Think That I Like Her", R.drawable.itunes));
+        arrayMusic.add(new Music("That Girl", R.drawable.itunes));
+        arrayMusic.add(new Music("Left And Right ", R.drawable.itunes));
+        arrayMusic.add(new Music("All Falls Down ", R.drawable.itunes));
     }
 }
