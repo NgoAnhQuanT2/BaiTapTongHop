@@ -4,6 +4,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="411dp"
+            android:layout_height="270dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="73dp"
+            app:srcCompat="@drawable/lr1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="396dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="204dp"
+            android:text="OUR SONG(Anne-Marie,Niall Horan)"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imback"
+            android:layout_width="39dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="545dp"
+            app:srcCompat="@drawable/leftchevron" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="344dp"
+            android:layout_marginBottom="84dp"
+            android:text="5.643k"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="39dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="97dp"
+            app:srcCompat="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="39dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginBottom="98dp"
+            app:srcCompat="@drawable/comment" />
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="203dp"
+            android:layout_marginBottom="84dp"
+            android:text="5.643k"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="39dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="299dp"
+            android:layout_marginBottom="97dp"
+            app:srcCompat="@drawable/share" />
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginBottom="83dp"
+            android:text="5.643k"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#1B1919"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pausebutton" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/next" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
